@@ -1,0 +1,44 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 800px;
+  height: 480px;
+  font-family: Verdana;
+  margin: 0px;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  height: 120px;
+  background: #f7f6a7;
+}
+
+.content {
+  overflow: auto;
+  height: 360px;
+}
+
+.left {
+  float: left;
+  width: 320px;
+  height: 100%;
+  background: #b6ff00;
+}
+
+.middle {
+  float: left;
+  width: 240px;
+  height: 100%;
+  background: #beddf3;
+}
+
+.right {
+  float: left;
+  width: 240px;
+  height: 100%;
+  background: #f1c7a9;
+}
+
