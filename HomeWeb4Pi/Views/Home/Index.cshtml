@@ -6,16 +6,20 @@
 
 <div class="content">
 
-  <div class="left">
+  <div id="calendar-part" class="left">
     @Html.Partial("~/Views//Parts/Calendar.cshtml", new HomeWeb4Pi.Models.Parts.CalendarModel())
   </div>
 
   <div class="middle">
-    MIDDLE
+    <div id="clock-part">
+      @Html.Partial("~/Views//Parts/Clock.cshtml", new HomeWeb4Pi.Models.Parts.ClockModel())
+    </div>
   </div>
 
-  <div class="right">
-    RIGHT
+  <div class="right">    
+    <div id="stopwatch-part">
+      @Html.Partial("~/Views//Parts/Stopwatch.cshtml", new HomeWeb4Pi.Models.Parts.StopwatchModel())
+    </div>
   </div>
 </div>
 
@@ -23,8 +27,9 @@
 
   $(document).ready(function () {
 
-    setInterval(refreshWeatherForecast, 1000 * 600); // forecast refresh svakih 600 sekundi / 10 minuta
-    setInterval(refreshCalendar, 1000 * 600); // calendar refresh svakih 600 sekundi / 10 minuta
+    setInterval(refreshWeatherForecast, 1000 * 600); 
+    setInterval(refreshCalendar, 1000 * 600); 
+    setInterval(refreshClock, 1000 * 25); 
 
   }); // document.ready end
 
@@ -49,5 +54,14 @@
     });
   }
 
+  function refreshClock() {
+    $.ajax({
+      type: 'GET',
+      url: '/Ajax/RefreshClock',
+      success: function (html) {
+        $('#clock-part').html(html);
+      }
+    });
+  }
 
 </script>

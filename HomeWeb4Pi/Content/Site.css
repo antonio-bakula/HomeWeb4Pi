@@ -31,22 +31,21 @@ body {
   float: left;
   width: 240px;
   height: 100%;
-  background: #beddf3;
 }
 
 .right {
   float: left;
   width: 240px;
   height: 100%;
-  background: #f1c7a9;
 }
 
+/*#region forecast */
 .fcast {
   margin: 1px;
   padding: 2px 2px 2px 6px;
-  border: solid;
+  /*border: solid;
   border-radius: 4px 4px;
-  border-width: 1px;
+  border-width: 1px;*/
 }
 
 .fcast-item {
@@ -71,6 +70,9 @@ body {
   margin-bottom: 4px;
 }
 
+/*#endregion */
+
+/*#region calendar */
 .gcal {
   padding: 4px;
 }
@@ -98,3 +100,53 @@ body {
   padding-left: 5px;
   font-weight: lighter;
 }
+
+/*#endregion */
+
+/*#region clock */
+#clock-part {
+  height: 50%;
+  width: 100%;
+  padding: 2px 2px 2px 6px;
+}
+
+.clock {
+  text-align: center;
+}
+
+.clock-time {
+  font-size: 86px;
+}
+
+.clock-date {
+  font-size: 24px;
+}
+
+/*#endregion */
+/*#region stopwatch */
+#stopwatch-part {
+  height: 50%;
+  width: 100%;
+  padding: 2px 2px 2px 6px;
+}
+
+.stopwatch {
+  text-align: center;
+}
+
+.stopwatch-current {
+  font-size: 86px;
+}
+
+.stopwatch-presets {
+}
+
+.stopwatch-preset-item {
+  display: inline-block;
+  padding: 2px;
+  border: solid;
+  border-radius: 4px 4px;
+  border-width: 1px;
+  font-size: 14px;
+}
+/*#endregion */

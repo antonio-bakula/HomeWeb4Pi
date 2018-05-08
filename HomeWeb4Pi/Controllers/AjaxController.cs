@@ -29,5 +29,12 @@ namespace HomeWeb4Pi.Controllers
       string html = RazorExtensionHelpers.RenderViewToString(this.ControllerContext, "~/Views/Parts/Calendar.cshtml", model);
       return Content(html);
     }
+
+    public ActionResult RefreshClock()
+    {
+      var model = new ClockModel();
+      string html = RazorExtensionHelpers.RenderViewToString(this.ControllerContext, "~/Views/Parts/Clock.cshtml", model);
+      return Content(html);
+    }
   }
 }

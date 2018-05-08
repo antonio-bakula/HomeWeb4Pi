@@ -24,7 +24,7 @@ namespace HomeWeb4Pi.Models.Parts
 
       this.CurrentTemperature = this.data.Temperature.ToString() + "°";
       this.CurrentCondition = EnglishTranslator.TranslateToHr(this.data.Text);
-      this.CurrentConditionImage = "/Content/Images/Weather/" + this.data.Code.ToString() + ".png";
+      this.CurrentConditionImage = "/Content/Images/Weather/" + this.data.Code.ToString("00") + ".png";
       this.Forecasts = this.data.Forecasts.Skip(1).Select(fc => new WeatherDayData(fc)).ToList();
     }
   }
@@ -63,7 +63,7 @@ namespace HomeWeb4Pi.Models.Parts
       this.TemperatureMin = $"{forecast.TempMin}°";
       this.TemperatureMax = $"{forecast.TempMax}°";
       this.Forecast = EnglishTranslator.TranslateToHr(forecast.Text);
-      this.ForecastImage = "/Content/Images/Weather/" + forecast.Code.ToString() + ".png";
+      this.ForecastImage = "/Content/Images/Weather/" + forecast.Code.ToString("00") + ".png";
     }
   }
 
