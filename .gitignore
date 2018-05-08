@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/HomeWeb4Pi/App_Data/google_calendar_client_store.json/Google.Apis.Auth.OAuth2.Responses.TokenResponse-user
+/HomeWeb4Pi/App_Data/google_calendar_client_id.json

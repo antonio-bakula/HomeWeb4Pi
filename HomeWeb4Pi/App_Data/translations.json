@@ -36,6 +36,34 @@
     "Croatian": "Ned"
   },
   {
+    "English": "Monday",
+    "Croatian": "Ponedjeljak"
+  },
+  {
+    "English": "Tuesday",
+    "Croatian": "Utorak"
+  },
+  {
+    "English": "Wednesday",
+    "Croatian": "Srijeda"
+  },
+  {
+    "English": "Thursday",
+    "Croatian": "Četvrtak"
+  },
+  {
+    "English": "Friday",
+    "Croatian": "Petak"
+  },
+  {
+    "English": "Saturday",
+    "Croatian": "Subota"
+  },
+  {
+    "English": "Sunday",
+    "Croatian": "Nedjelja"
+  },
+  {
     "English": "min",
     "Croatian": "min"
   },
@@ -169,7 +197,7 @@
   },
   {
     "English": "Hot",
-    "Croatian": "Vrućine"
+    "Croatian": "Vruće"
   },
   {
     "English": "Isolated Thunderstorms",

@@ -1,13 +1,13 @@
 ﻿@model HomeWeb4Pi.Models.Home.IndexModel
 
-<div class="header">
+<div id="forecast-part" class="header">
   @Html.Partial("~/Views//Parts/Weather.cshtml", new HomeWeb4Pi.Models.Parts.WeatherModel())
 </div>
 
 <div class="content">
 
   <div class="left">
-    @Html.Partial("~/Views//Parts/Calendar.cshtml", new HomeWeb4Pi.Models.Parts.CalendarModel())    
+    @Html.Partial("~/Views//Parts/Calendar.cshtml", new HomeWeb4Pi.Models.Parts.CalendarModel())
   </div>
 
   <div class="middle">
@@ -19,3 +19,35 @@
   </div>
 </div>
 
+<script type="text/javascript">
+
+  $(document).ready(function () {
+
+    setInterval(refreshWeatherForecast, 1000 * 600); // forecast refresh svakih 600 sekundi / 10 minuta
+    setInterval(refreshCalendar, 1000 * 600); // calendar refresh svakih 600 sekundi / 10 minuta
+
+  }); // document.ready end
+
+
+  function refreshWeatherForecast() {
+    $.ajax({
+      type: 'GET',
+      url: '/Ajax/RefreshWeatherForecast',
+      success: function (html) {
+        $('#forecast-part').html(html);       
+      }
+    });
+  }
+
+  function refreshCalendar() {
+    $.ajax({
+      type: 'GET',
+      url: '/Ajax/RefreshCalendar',
+      success: function (html) {
+        $('#calendar-part').html(html);
+      }
+    });
+  }
+
+
+</script>

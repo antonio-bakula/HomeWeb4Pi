@@ -11,7 +11,6 @@ body {
 }
 
 .header {
-  padding-top: 2px;
   width: 100%;
   height: 128px;
 }
@@ -25,7 +24,7 @@ body {
   float: left;
   width: 320px;
   height: 100%;
-  background: #b6ff00;
+  overflow: hidden;
 }
 
 .middle {
@@ -43,7 +42,11 @@ body {
 }
 
 .fcast {
-  padding-left: 12px;
+  margin: 1px;
+  padding: 2px 2px 2px 6px;
+  border: solid;
+  border-radius: 4px 4px;
+  border-width: 1px;
 }
 
 .fcast-item {
@@ -53,7 +56,7 @@ body {
 }
 
   .fcast-item img {
-    width: 64px;
+    width: 60px;
   }
 
 .fcast-tmp {
@@ -66,4 +69,32 @@ body {
   margin-right: 16px;
   margin-top: 6px;
   margin-bottom: 4px;
+}
+
+.gcal {
+  padding: 4px;
+}
+
+.gcal-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.gcal-days {
+  padding-top: 6px;
+}
+
+.gcal-day {
+  padding-top: 4px;
+}
+
+.gcal-day-title {
+  background: #0094ff;
+  color: white;
+  padding-left: 5px;
+}
+
+.gcal-day-contents {
+  padding-left: 5px;
+  font-weight: lighter;
 }

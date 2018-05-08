@@ -1,3 +1,19 @@
 ﻿@model HomeWeb4Pi.Models.Parts.CalendarModel
 
-CALENDAR
+<div id="calendar-part" class="gcal">
+  <div class="gcal-title">Kalendar</div>
+  <div class="gcal-days">
+    @foreach (var day in Model.Days)
+    {
+      <div class="gcal-day">
+        <div class="gcal-day-title">@day.Title</div>
+        <div class="gcal-day-contents">
+          @foreach (var item in day.Items)
+          {
+            <div>@item.Period @item.Title</div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>
