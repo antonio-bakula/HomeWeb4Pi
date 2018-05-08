@@ -1,0 +1,32 @@
+﻿@model HomeWeb4Pi.Models.Parts.WeatherModel
+
+<div class="fcast">
+  <div class="fcast-item">
+    <div><b>@Model.City</b></div>
+    <div class="fcast-img">
+      <img src="@Model.CurrentConditionImage" />
+    </div>
+    <div class="fcast-tmp">
+      <div>@Model.CurrentTemperature</div>
+    </div>
+    <div>@Model.CurrentCondition</div>
+  </div>
+
+  @foreach (var fc in Model.Forecasts)
+  {
+  <div class="fcast-item">
+    <div>@fc.Day</div>    
+    <div>
+      <div class="fcast-img">
+        <img src="@fc.ForecastImage" />
+      </div>
+      <div class="fcast-tmp">
+        <div>@fc.TemperatureMin</div>
+        <div>@fc.TemperatureMax</div>
+      </div>
+    </div>
+    <div>@fc.Forecast</div>
+  </div>
+  }
+
+</div>

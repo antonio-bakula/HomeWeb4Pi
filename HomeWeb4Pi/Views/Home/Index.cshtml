@@ -1,13 +1,13 @@
 ﻿@model HomeWeb4Pi.Models.Home.IndexModel
 
 <div class="header">
-  HEADER
+  @Html.Partial("~/Views//Parts/Weather.cshtml", new HomeWeb4Pi.Models.Parts.WeatherModel())
 </div>
 
 <div class="content">
 
   <div class="left">
-    LEFT
+    @Html.Partial("~/Views//Parts/Calendar.cshtml", new HomeWeb4Pi.Models.Parts.CalendarModel())    
   </div>
 
   <div class="middle">

@@ -1,0 +1,398 @@
+﻿[
+  {
+    "English": "Today",
+    "Croatian": "Danas"
+  },
+  {
+    "English": "Tomorrow",
+    "Croatian": "Sutra"
+  },
+  {
+    "English": "Mon",
+    "Croatian": "Pon"
+  },
+  {
+    "English": "Tue",
+    "Croatian": "Uto"
+  },
+  {
+    "English": "Wed",
+    "Croatian": "Sri"
+  },
+  {
+    "English": "Thu",
+    "Croatian": "Čet"
+  },
+  {
+    "English": "Fri",
+    "Croatian": "Pet"
+  },
+  {
+    "English": "Sat",
+    "Croatian": "Sub"
+  },
+  {
+    "English": "Sun",
+    "Croatian": "Ned"
+  },
+  {
+    "English": "min",
+    "Croatian": "min"
+  },
+  {
+    "English": "max",
+    "Croatian": "max"
+  },
+  {
+    "English": "Tornado",
+    "Croatian": "Tornado"
+  },
+  {
+    "English": "Tropical Storm",
+    "Croatian": "Tropska oluja"
+  },
+  {
+    "English": "Hurricane",
+    "Croatian": "Uragan"
+  },
+  {
+    "English": "Severe Thunderstorms",
+    "Croatian": "Snažna oluja"
+  },
+  {
+    "English": "Thunderstorms",
+    "Croatian": "Oluja"
+  },
+  {
+    "English": "Mixed Rain and Snow",
+    "Croatian": "Kiša i snijeg"
+  },
+  {
+    "English": "Mixed Rain and Sleet",
+    "Croatian": "Kiša i susnježica"
+  },
+  {
+    "English": "Mixed Snow and Sleet",
+    "Croatian": "Snijeg i susnježica"
+  },
+  {
+    "English": "Freezing Drizzle",
+    "Croatian": "Mraz"
+  },
+  {
+    "English": "Drizzle",
+    "Croatian": "Slaba rosulja"
+  },
+  {
+    "English": "Freezing Rain",
+    "Croatian": "Ledena kiša"
+  },
+  {
+    "English": "Showers",
+    "Croatian": "Pljuskovi"
+  },
+  {
+    "English": "Snow Flurries",
+    "Croatian": "Snijeg i vjetar"
+  },
+  {
+    "English": "Light Snow Showers",
+    "Croatian": "Blagi snijeg"
+  },
+  {
+    "English": "Blowing Snow",
+    "Croatian": "Snježna vijavica"
+  },
+  {
+    "English": "Snow",
+    "Croatian": "Snijeg"
+  },
+  {
+    "English": "Hail",
+    "Croatian": "Tuča"
+  },
+  {
+    "English": "Sleet",
+    "Croatian": "Susnježica"
+  },
+  {
+    "English": "Dust",
+    "Croatian": "Pješčana oluja"
+  },
+  {
+    "English": "Foggy",
+    "Croatian": "Maglovito"
+  },
+  {
+    "English": "Haze",
+    "Croatian": "Sumaglica"
+  },
+  {
+    "English": "Smoky",
+    "Croatian": "Sumaglica"
+  },
+  {
+    "English": "Blustery",
+    "Croatian": "Olujno vrijeme"
+  },
+  {
+    "English": "Wind",
+    "Croatian": "Vjetar"
+  },
+  {
+    "English": "Windy",
+    "Croatian": "Vjetrovito"
+  },
+  {
+    "English": "Cold",
+    "Croatian": "Hladno"
+  },
+  {
+    "English": "Cloudy",
+    "Croatian": "Oblačno"
+  },
+  {
+    "English": "Clear",
+    "Croatian": "Vedro"
+  },
+  {
+    "English": "Sunny",
+    "Croatian": "Sunčano"
+  },
+  {
+    "English": "Fair",
+    "Croatian": "Vedro"
+  },
+  {
+    "English": "Mixed Rain and Hail",
+    "Croatian": "Tuča i kiša"
+  },
+  {
+    "English": "Hot",
+    "Croatian": "Vrućine"
+  },
+  {
+    "English": "Isolated Thunderstorms",
+    "Croatian": "Izolirane oluje"
+  },
+  {
+    "English": "Scattered Thunderstorms",
+    "Croatian": "Mjestimične oluje"
+  },
+  {
+    "English": "Scattered Showers",
+    "Croatian": "Mjestimični pljuskovi"
+  },
+  {
+    "English": "Heavy Snow",
+    "Croatian": "Gusti snijeg"
+  },
+  {
+    "English": "Scattered Snow Showers",
+    "Croatian": "Raspršeni snijeg"
+  },
+  {
+    "English": "Partly Cloudy",
+    "Croatian": "Djelomično oblačno"
+  },
+  {
+    "English": "Thundershowers",
+    "Croatian": "Olujni pljuskovi"
+  },
+  {
+    "English": "Snow Showers",
+    "Croatian": "Snježni pljuskovi"
+  },
+  {
+    "English": "Isolated Thundershowers",
+    "Croatian": "Izolirani olujni pljuskovi"
+  },
+  {
+    "English": "Not Available",
+    "Croatian": "Nema informacija"
+  },
+  {
+    "English": "Fog",
+    "Croatian": "Magla"
+  },
+  {
+    "English": "Chance of Snow:",
+    "Croatian": "Mogućnost za snijeg:"
+  },
+  {
+    "English": "Chance of Precip:",
+    "Croatian": "Mogućnost za oborine:"
+  },
+  {
+    "English": "Chance of Rain:",
+    "Croatian": "Mogućnost za kišu:"
+  },
+  {
+    "English": "Visibility",
+    "Croatian": "Vidljivost"
+  },
+  {
+    "English": "Rain",
+    "Croatian": "Kiša"
+  },
+  {
+    "English": "Isolated T-Storms",
+    "Croatian": "Izolirane oluje"
+  },
+  {
+    "English": "Few Snow Showers",
+    "Croatian": "Ponegdje snijeg"
+  },
+  {
+    "English": "Snow to Wintry Mix",
+    "Croatian": "Snijeg i studen"
+  },
+  {
+    "English": "Humidity",
+    "Croatian": "Vlažnost"
+  },
+  {
+    "English": "Sunrise",
+    "Croatian": "Svitanje"
+  },
+  {
+    "English": "Sunset",
+    "Croatian": "Sumrak"
+  },
+  {
+    "English": "Light Rain",
+    "Croatian": "Lagana kiša"
+  },
+  {
+    "English": "Low",
+    "Croatian": "Nizak"
+  },
+  {
+    "English": "High",
+    "Croatian": "Visok"
+  },
+  {
+    "English": "T-Storms",
+    "Croatian": "Oluja"
+  },
+  {
+    "English": "Ice Early",
+    "Croatian": "Jutarnji mraz"
+  },
+  {
+    "English": "Scattered T-Storms",
+    "Croatian": "Mjestimično olujno"
+  },
+  {
+    "English": "Partly Sunny",
+    "Croatian": "Djelomično sunčano"
+  },
+  {
+    "English": "Mostly Sunny",
+    "Croatian": "Uglavnom sunčano"
+  },
+  {
+    "English": "Partly Cloudy",
+    "Croatian": "Djelomično oblačno"
+  },
+  {
+    "English": "Mostly Cloudy",
+    "Croatian": "Uglavnom oblačno"
+  },
+  {
+    "English": "Mostly Clear",
+    "Croatian": "Uglavnom vedro"
+  },
+  {
+    "English": "Partly Clear",
+    "Croatian": "Djelomično vedro"
+  },
+  {
+    "English": "Mostly Rain",
+    "Croatian": "Uglavnom kiša"
+  },
+  {
+    "English": "Partly Rain",
+    "Croatian": "Djelomično kiša"
+  },
+  {
+    "English": "Partly Snow",
+    "Croatian": "Djelomično snijeg"
+  },
+  {
+    "English": "Mostly Snow",
+    "Croatian": "Uglavnom snijeg"
+  },
+  {
+    "English": "Partly Clear",
+    "Croatian": "Djelomično vedro"
+  },
+  {
+    "English": "Mostly Clear",
+    "Croatian": "Uglavnom vedro"
+  },
+  {
+    "English": "AM",
+    "Croatian": "Prije podne"
+  },
+  {
+    "English": "PM",
+    "Croatian": "Poslije podne"
+  },
+  {
+    "English": "(day)",
+    "Croatian": "(dan)"
+  },
+  {
+    "English": "(night)",
+    "Croatian": "(noć)"
+  },
+  {
+    "English": "Late",
+    "Croatian": "Kasno"
+  },
+  {
+    "English": "Early",
+    "Croatian": "Rano"
+  },
+  {
+    "English": "Partly Cloudy/Wind",
+    "Croatian": "Djelomično oblačno/Vjetar"
+  },
+  {
+    "English": "Sunny/Wind",
+    "Croatian": "Sunčano/Vjetar"
+  },
+  {
+    "English": "Clear/Wind",
+    "Croatian": "Vedro/Vjetar"
+  },
+  {
+    "English": "Showers/Wind",
+    "Croatian": "Pljuskovi/Vjetar"
+  },
+  {
+    "English": "AM Clouds/PM Sun",
+    "Croatian": "AM Oblačno/PM Sunčano"
+  },
+  {
+    "English": "Rain/Thunder",
+    "Croatian": "Kiša/Grmljavina"
+  },
+  {
+    "English": "Thunder",
+    "Croatian": "Grmljavina"
+  },
+  {
+    "English": "Mist",
+    "Croatian": "Izmaglica"
+  },
+  {
+    "English": "Mostly Cloudy/Windy",
+    "Croatian": "Uglavnom oblačno/Vjetrovito"
+  },
+  {
+    "English": "Partly Cloudy/Windy",
+    "Croatian": "Djelomično oblačno/Vjetrovito"
+  }
+]

@@ -1,24 +1,24 @@
 ﻿* {
   box-sizing: border-box;
+  vertical-align: middle;
 }
 
 body {
   width: 800px;
   height: 480px;
-  font-family: Verdana;
+  font-family: Oswald;
   margin: 0px;
 }
 
 .header {
-  text-align: center;
+  padding-top: 2px;
   width: 100%;
-  height: 120px;
-  background: #f7f6a7;
+  height: 128px;
 }
 
 .content {
   overflow: auto;
-  height: 360px;
+  height: 352px;
 }
 
 .left {
@@ -42,3 +42,28 @@ body {
   background: #f1c7a9;
 }
 
+.fcast {
+  padding-left: 12px;
+}
+
+.fcast-item {
+  display: inline-block;
+  width: 152px;
+  text-align: center;
+}
+
+  .fcast-item img {
+    width: 64px;
+  }
+
+.fcast-tmp {
+  display: inline-block;
+  text-align: right;
+}
+
+.fcast-img {
+  display: inline-block;
+  margin-right: 16px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
