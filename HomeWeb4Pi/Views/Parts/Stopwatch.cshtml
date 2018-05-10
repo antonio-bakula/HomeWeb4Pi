@@ -1,10 +1,97 @@
-﻿<div class="stopwatch">
+﻿@model HomeWeb4Pi.Models.Parts.StopwatchModel
+
+<div class="stopwatch">
   <div class="stopwatch-current">00:00</div>
   <div class="stopwatch-presets">
-    <div class="stopwatch-preset-item">05:00</div>
-    <div class="stopwatch-preset-item">10:00</div>
-    <div class="stopwatch-preset-item">15:00</div>
-    <div class="stopwatch-preset-item">30:00</div>
-    <div class="stopwatch-preset-item">45:00</div>
+    @foreach (var preset in Model.Presets)
+    {
+      <div class="stopwatch-preset-item" data-minutes="@preset.Minutes">@preset.Period</div>
+    }
   </div>
 </div>
+
+<script type="text/javascript">
+
+  var endTime = null;
+  var stopwatchRunning = false;
+
+  $(document).ready(function () {
+
+    $('.stopwatch-preset-item').click(function () {
+      onPresetClick(this);
+    });
+
+    showStopwatchValue();
+  }); // document.ready end
+
+  function onPresetClick(element) {
+    if (stopwatchRunning) {
+      return;
+    }
+    var minutes = Number.parseInt(element.dataset.minutes);
+    startStopwatch(minutes);
+  }
+
+  function startStopwatch(minutes) {
+    endTime = new Date();
+    endTime.setMinutes(endTime.getMinutes() + minutes);
+    stopwatchRunning = true;
+    showStopwatchValue();
+    setStopwatchTimeout();
+  }
+
+  function stopStopwatch() {
+    stopwatchRunning = false;
+    endTime = null;
+    showStopwatchValue();
+    $('.stopwatch-current').addClass('stopwatch-finished');
+    setTimeout(function () { $('.stopwatch-current').removeClass('stopwatch-finished') }, 30000); // 300000 ms = 5 min
+  }
+
+  function setStopwatchTimeout() {
+    setTimeout(stopwatchTick, 500);
+  }
+
+  function stopwatchTick() {
+    if (!stopwatchRunning) {
+      return;
+    }
+    var remainingSeconds = getRemainingTimeInSeconds();
+    if (remainingSeconds <= 0) {
+      stopStopwatch();
+    }
+    else {
+      showStopwatchValue();
+      setStopwatchTimeout();
+    }
+  }
+
+  function getRemainingTimeInSeconds() {
+    if (stopwatchRunning && endTime != null) {
+      return Math.round((endTime - new Date()) / 1000);
+    } else {
+      return 0;
+    }
+  }
+
+  function showStopwatchValue() {
+    var minutes = 0;
+    var seconds = 0;
+    var remainingSeconds = getRemainingTimeInSeconds();
+
+    if (remainingSeconds > 0) {
+      minutes = Math.floor(remainingSeconds / 60);
+      seconds = remainingSeconds - (minutes * 60);
+    }
+    var displayValue = pad(minutes, 2) + ":" + pad(seconds, 2);
+    $('.stopwatch-current').text(displayValue);
+  }
+
+  function pad(num, size) {
+    var s = num + "";
+    while (s.length < size) s = "0" + s;
+    return s;
+  }
+
+
+</script>

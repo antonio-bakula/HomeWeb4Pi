@@ -22,20 +22,20 @@ body {
 
 .left {
   float: left;
-  width: 320px;
+  width: 420px;
   height: 100%;
   overflow: hidden;
 }
 
 .middle {
   float: left;
-  width: 240px;
+  width: 10px;
   height: 100%;
 }
 
 .right {
   float: left;
-  width: 240px;
+  width: 360px;
   height: 100%;
 }
 
@@ -138,15 +138,35 @@ body {
   font-size: 86px;
 }
 
+.stopwatch-finished {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
 .stopwatch-presets {
 }
 
 .stopwatch-preset-item {
   display: inline-block;
   padding: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
   border: solid;
   border-radius: 4px 4px;
   border-width: 1px;
-  font-size: 14px;
+  font-size: 18px;
 }
 /*#endregion */
