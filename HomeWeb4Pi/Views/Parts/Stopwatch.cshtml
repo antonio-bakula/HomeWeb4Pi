@@ -14,11 +14,16 @@
 
   var endTime = null;
   var stopwatchRunning = false;
+  var alarmAudio = null;
 
   $(document).ready(function () {
 
     $('.stopwatch-preset-item').click(function () {
       onPresetClick(this);
+    });
+
+    $('.stopwatch-current').click(function () {
+      stopElapsedEffect();
     });
 
     showStopwatchValue();
@@ -33,8 +38,11 @@
   }
 
   function startStopwatch(minutes) {
+    stopElapsedEffect();
     endTime = new Date();
     endTime.setMinutes(endTime.getMinutes() + minutes);
+    // just for dev test
+    //endTime.setSeconds(endTime.getSeconds() + minutes);
     stopwatchRunning = true;
     showStopwatchValue();
     setStopwatchTimeout();
@@ -44,8 +52,23 @@
     stopwatchRunning = false;
     endTime = null;
     showStopwatchValue();
+    startElapsedEffect();
+    setTimeout(function () { stopElapsedEffect() }, 300000); // 300000 ms = 5 min
+  }
+
+  function startElapsedEffect() {
+    alarmAudio = new Audio('/Content/Sounds/Alarm.mp3');
+    alarmAudio.loop = true;
+    alarmAudio.play();
     $('.stopwatch-current').addClass('stopwatch-finished');
-    setTimeout(function () { $('.stopwatch-current').removeClass('stopwatch-finished') }, 30000); // 300000 ms = 5 min
+  }
+
+  function stopElapsedEffect() {
+    if (alarmAudio != null) {
+      alarmAudio.pause();
+      alarmAudio = null;
+    }
+    $('.stopwatch-current').removeClass('stopwatch-finished');
   }
 
   function setStopwatchTimeout() {

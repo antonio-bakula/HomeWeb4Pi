@@ -11,7 +11,7 @@ namespace HomeWeb4Pi.Models.Parts
 
     public StopwatchModel()
     {
-      var durations = new List<int> { 5, 10, 15, 30, 45, 1 };
+      var durations = new List<int> { 5, 10, 15, 30, 45, 60 };
       this.Presets = durations.Select(ii => new StopwatchPresetItemModel(ii)).ToList();
     }
   }
